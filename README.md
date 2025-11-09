@@ -251,5 +251,5 @@ Este projeto é open source e está disponível sob a licença MIT.
 
 ## 👨‍💻 Desenvolvido por
 
-Desenvolvido como projeto de estudo em Vue.js e Laravel.
+**Desenvolvido por [Julio Monteiro](https://github.com/juliomonteiiro)** em Vue.js e Laravel.
 
