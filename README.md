@@ -177,7 +177,7 @@ O sistema utiliza Laravel Sanctum para autenticação. As rotas protegidas reque
 - `GET /api/contacts` - Listar contatos
 - `POST /api/contacts` - Criar contato
 - `GET /api/contacts/{id}` - Obter contato
-- `PUT /api/contacts/{id}` - Atualizar contato
+- `POST /api/contacts/{id}` - Atualizar contato
 - `DELETE /api/contacts/{id}` - Excluir contato
 
 ## 🎨 Funcionalidades
