@@ -55,34 +55,34 @@
         <div
           v-for="contact in contacts"
           :key="contact.id"
-          class="p-4 hover:bg-gray-700/50 transition-colors"
+          class="p-4 sm:p-5 hover:bg-gray-700/50 transition-colors"
         >
-          <div class="flex items-center justify-between">
-            <div class="flex items-center space-x-4 flex-1 min-w-0">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div class="flex items-center space-x-3 sm:space-x-4 flex-1 min-w-0">
               <div class="flex-shrink-0">
                 <img
                   v-if="contact.image"
                   :src="getImageUrl(contact.image)"
                   :alt="contact.name"
-                  class="h-12 w-12 rounded-full object-cover border-2 border-gray-600"
+                  class="h-12 w-12 sm:h-12 sm:w-12 rounded-full object-cover border-2 border-gray-600"
                 />
                 <div
                   v-else
-                  class="h-12 w-12 rounded-full bg-indigo-500 flex items-center justify-center text-white text-lg font-bold"
+                  class="h-12 w-12 sm:h-12 sm:w-12 rounded-full bg-indigo-500 flex items-center justify-center text-white text-lg font-bold"
                 >
                   {{ contact.name.charAt(0).toUpperCase() }}
                 </div>
               </div>
               <div class="flex-1 min-w-0">
-                <h3 class="text-lg font-semibold text-white truncate">
+                <h3 class="text-base sm:text-lg font-semibold text-white truncate">
                   {{ contact.name }}
                 </h3>
                 <div
-                  class="mt-1 flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-1 sm:space-y-0"
+                  class="mt-1.5 sm:mt-1 flex flex-col sm:flex-row sm:items-center sm:space-x-4 space-y-1.5 sm:space-y-0"
                 >
                   <p class="text-sm text-gray-400 flex items-center">
                     <svg
-                      class="w-4 h-4 mr-1.5 text-gray-500"
+                      class="w-4 h-4 mr-1.5 text-gray-500 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -98,7 +98,7 @@
                   </p>
                   <p class="text-sm text-gray-400 flex items-center">
                     <svg
-                      class="w-4 h-4 mr-1.5 text-gray-500"
+                      class="w-4 h-4 mr-1.5 text-gray-500 flex-shrink-0"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -115,10 +115,10 @@
                 </div>
               </div>
             </div>
-            <div class="flex items-center gap-2 ml-4 flex-shrink-0">
+            <div class="flex items-center gap-2 sm:gap-2 sm:ml-4 flex-shrink-0">
               <button
                 @click="$emit('view', contact)"
-                class="px-4 py-2 text-sm bg-indigo-600 hover:bg-indigo-700 bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg transition-colors font-medium flex items-center gap-1.5"
+                class="px-3 py-2 sm:px-4 text-xs sm:text-sm bg-indigo-600 hover:bg-indigo-700 bg-indigo-500 hover:bg-indigo-600 text-white rounded-lg transition-colors font-medium flex items-center gap-1.5"
               >
                 <svg
                   class="w-4 h-4"
@@ -139,17 +139,17 @@
                     d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
                   />
                 </svg>
-                Ver
+                <span class="hidden sm:inline">Ver</span>
               </button>
               <button
                 @click="$emit('edit', contact)"
-                class="px-4 py-2 text-sm bg-blue-600 hover:bg-blue-700 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors font-medium"
+                class="px-3 py-2 sm:px-4 text-xs sm:text-sm bg-blue-600 hover:bg-blue-700 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors font-medium"
               >
                 Editar
               </button>
               <button
                 @click="$emit('delete', contact)"
-                class="px-4 py-2 text-sm bg-red-600 hover:bg-red-700 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors font-medium"
+                class="px-3 py-2 sm:px-4 text-xs sm:text-sm bg-red-600 hover:bg-red-700 bg-red-500 hover:bg-red-600 text-white rounded-lg transition-colors font-medium"
               >
                 Excluir
               </button>
