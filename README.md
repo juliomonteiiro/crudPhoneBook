@@ -186,14 +186,9 @@ O sistema utiliza Laravel Sanctum para autenticação. As rotas protegidas reque
 O sistema possui modo escuro que pode ser alternado através do botão na navbar. A preferência é salva no localStorage.
 
 ### Upload de Imagens
-- Formatos aceitos: JPG, PNG, GIF
+- Formatos aceitos: JPG, PNG
 - Tamanho máximo: 2MB
 - As imagens são armazenadas em `storage/app/public/contacts`
-
-### Responsividade
-- Desktop: Grid com múltiplas colunas
-- Tablet: Grid com 2-3 colunas
-- Mobile: Grid com 1 coluna
 
 ## 🔒 Segurança
 
