@@ -1,10 +1,6 @@
 # Agenda Telefônica
 
-Sistema completo de agenda telefônica desenvolvido com Vue.js 3 (Frontend) e Laravel 8 (Backend).
-
-## 📞 Agenda Telefônica
-
-Sistema completo de agenda telefônica desenvolvido com Vue.js 3 (Frontend) e Laravel 8 (Backend).
+Sistema completo de agenda telefônica desenvolvido com Vue.js 3 (Frontend) e Laravel 7.4 (Backend).
 
 ## 🎥 Apresentação
 
