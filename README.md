@@ -8,7 +8,6 @@ Sistema completo de agenda telefônica desenvolvido com Vue.js 3 (Frontend) e La
 - ✅ Autenticação com Laravel Sanctum
 - ✅ Upload de imagens para contatos
 - ✅ Design responsivo (Desktop e Mobile)
-- ✅ Modo escuro
 - ✅ Validação de rotas protegidas
 - ✅ Interface moderna e intuitiva
 
