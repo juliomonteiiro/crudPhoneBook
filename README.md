@@ -29,7 +29,7 @@ Sistema completo de agenda telefônica desenvolvido com Vue.js 3 (Frontend) e La
 ## 📦 Instalação
 
 ### Pré-requisitos
-- PHP 8.0
+- PHP 7.4
 - Composer
 - Node.js 22.12.0
 - MySQL
@@ -177,7 +177,7 @@ O sistema utiliza Laravel Sanctum para autenticação. As rotas protegidas reque
 - `GET /api/contacts` - Listar contatos
 - `POST /api/contacts` - Criar contato
 - `GET /api/contacts/{id}` - Obter contato
-- `PUT /api/contacts/{id}` - Atualizar contato
+- `POST /api/contacts/{id}` - Atualizar contato
 - `DELETE /api/contacts/{id}` - Excluir contato
 
 ## 🎨 Funcionalidades
@@ -186,14 +186,9 @@ O sistema utiliza Laravel Sanctum para autenticação. As rotas protegidas reque
 O sistema possui modo escuro que pode ser alternado através do botão na navbar. A preferência é salva no localStorage.
 
 ### Upload de Imagens
-- Formatos aceitos: JPG, PNG, GIF
+- Formatos aceitos: JPG, PNG
 - Tamanho máximo: 2MB
 - As imagens são armazenadas em `storage/app/public/contacts`
-
-### Responsividade
-- Desktop: Grid com múltiplas colunas
-- Tablet: Grid com 2-3 colunas
-- Mobile: Grid com 1 coluna
 
 ## 🔒 Segurança
 
