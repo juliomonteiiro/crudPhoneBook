@@ -29,7 +29,7 @@ Sistema completo de agenda telefônica desenvolvido com Vue.js 3 (Frontend) e La
 ## 📦 Instalação
 
 ### Pré-requisitos
-- PHP 8.0
+- PHP 7.4
 - Composer
 - Node.js 22.12.0
 - MySQL
